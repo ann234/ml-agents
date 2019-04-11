@@ -152,7 +152,8 @@ def basic_trainer_controller(brain_info):
         keep_checkpoints=False,
         lesson=None,
         external_brains={'testbrain': brain_info},
-        training_seed=99
+        training_seed=99,
+        fast_simulation=True
     )
 
 @patch('numpy.random.seed')
